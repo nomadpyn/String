@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+.vs/cls_string/v17/.suo
+*.db
+*.ipch
+*.sln
+*.vcxproj
+*.user
+*.filters
+*.vsidx
+*.lock
+*.db-shm
+*.db-wal
+*.opendb
