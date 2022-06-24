@@ -19,5 +19,8 @@ public:
 		delete[] this->str;
 	}
 	
+	void print() const;
+	char* getStr() const;
+	void setStr(const char* data);
 };
 
