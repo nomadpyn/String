@@ -1,14 +1,16 @@
-#include<iostream>
+﻿#include<iostream>
 #include "String.h"
 
 using namespace std;
-
+// метод вывода строки в консоль
 void String::print() const {
 	cout << this->str << endl;
 }
+// геттер строки
 char* String::getStr() const {
 	return this->str;
 }
+// сеттер строки
 void String::setStr(const char* data) {
 	delete[] this->str;
 	int l = strlen(data)+1;
