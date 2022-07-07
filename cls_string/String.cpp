@@ -31,7 +31,7 @@ int String::operator()(char value) const {
 	for (int i = 0; i < strlen(this->str); i++)
 		if (this->str[i] == value)
 			return i;
-	return 0;
+	return -1;
 }
 // перегрузка преобразования типа строка к типу int
 String::operator int() const {
