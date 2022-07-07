@@ -10,5 +10,6 @@ int main() {
 	a.print();
 	cout << a[5] << endl;
 	cout << a('p') << endl;
+	cout << int(a) << endl;
 	return 0;
 }

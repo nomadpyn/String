@@ -28,5 +28,6 @@ public:
 	void setStr(const char* data);
 	char operator[](int) const;
 	int operator()(char) const;
+	operator int() const;
 };
 

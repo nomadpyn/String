@@ -33,3 +33,7 @@ int String::operator()(char value) const {
 			return i;
 	return 0;
 }
+// перегрузка преобразования типа строка к типу int
+String::operator int() const {
+	return strlen(this->str);
+}
