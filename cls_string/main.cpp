@@ -9,5 +9,6 @@ int main() {
 	a.setStr("your welcome");
 	a.print();
 	cout << a[5] << endl;
+	cout << a('p') << endl;
 	return 0;
 }
