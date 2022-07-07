@@ -18,3 +18,11 @@ void String::setStr(const char* data) {
 	for (int i = 0; i < l; i++)
 		this->str[i] = data[i];
 }
+// перегрузка [] - возвращает элемент по указаному индексу
+char& String::operator[](int value) const {
+	int l = strlen(this->str);
+	if (value >= 0 && value < l)
+		return this->str[value];
+	else
+		return this->str[l];
+}

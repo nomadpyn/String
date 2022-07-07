@@ -26,5 +26,6 @@ public:
 	void print() const;
 	char* getStr() const;
 	void setStr(const char* data);
+	char& operator[](int) const;
 };
 

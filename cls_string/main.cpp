@@ -8,5 +8,6 @@ int main() {
 	cout << a.getStr() << endl;
 	a.setStr("your welcome");
 	a.print();
+	cout << a[5] << endl;
 	return 0;
 }
