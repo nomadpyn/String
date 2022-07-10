@@ -18,6 +18,10 @@ public:
 	}
 // конструктор по умолчанию
 	String() :String(80) {}
+//  конструктор переноса
+	String(String&& other) : str{ other.str } {
+		other.str = nullptr;
+	}
 // деструктор
 	~String() {
 		delete[] this->str;
