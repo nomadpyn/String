@@ -33,5 +33,6 @@ public:
 	char operator[](int) const;
 	int operator()(char) const;
 	operator int() const;
+	String& operator=(const String& other);
 };
 

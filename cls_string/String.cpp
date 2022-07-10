@@ -37,3 +37,19 @@ int String::operator()(char value) const {
 String::operator int() const {
 	return strlen(this->str);
 }
+// оператор присваивания переноса
+String& String::operator=(const String& other){
+	if (!(this == &other)) {
+		if (this->str != other.str) {
+			delete[]str;
+			str = new char[strlen(other.str)];
+		}
+		char* dest{ this->str };
+		char* src{ other.str };
+		int l = strlen(other.str) + 1;
+		for (int i = 0; i < l; i++) {
+			*dest++ = *src++;
+		}
+	}
+	return *this;
+}
